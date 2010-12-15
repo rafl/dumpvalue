@@ -1,3 +1,6 @@
+1.15  Wed, 15 Dec 2010 20:21:10 +0100
+  * Install to the right part of @INC on old perls.
+
 1.14  Wed, 15 Dec 2010 01:16:26 +0100
   * First upload to cpan. Identical with version 1.14 in the perl core. Upstream
     for this module is still blead perl.
