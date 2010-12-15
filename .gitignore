@@ -1,0 +1,4 @@
+.*
+!.gitignore
+Dumpvalue-*
+Debian_CPANTS.txt
