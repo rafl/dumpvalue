@@ -10,6 +10,12 @@ BEGIN {
 	    print "1..0 # Skip -- Perl configured without List::Util module\n";
 	    exit 0;
 	}
+
+	# `make test` in the CPAN version of this module runs us with -w, but
+	# Dumpvalue.pm relies on all sorts of things that can cause warnings. I
+	# don't think that's worth fixing, so we just turn off all warnings
+	# during testing.
+	$^W = 0;
 }
 
 use vars qw( $foo @bar %baz );
